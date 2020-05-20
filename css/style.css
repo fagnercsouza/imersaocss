@@ -1,0 +1,35 @@
+body{
+    background-color: #3b9bd6 ;
+    background-image: url('https://lp.mentalidadeempreendedora.com.br/wp-content/uploads/2017/06/background-azul.png');
+    background-size: auto 100vh;
+    font-family: Arial;
+   
+  }
+  .menu {
+    background-color: #000;
+  
+  }
+  .menu ul {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .menu li{
+    list-style: none;
+  }
+  a{
+    color: #fff;
+   text-decoration: none;
+  }
+  a:hover {
+    color: #ff00dd;
+  }
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke ;
+    text-align: center;
+  }
+  .site-subtitle{
+    font-style: italic;
+  }
