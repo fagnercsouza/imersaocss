@@ -23,6 +23,11 @@ body{
     font-size: 16px;
   }
 }
+@media (min-width: 840px){
+  body{
+    font-size: 20px;
+  }
+}
 header{
     height: 100vh;
     display: flex;
@@ -48,8 +53,9 @@ header{
     padding: 16px;
     color: #fff;
     text-decoration: none;
+    transition: background-color 1s, color 1s;
 }
-a:hover {
+.menu a:hover {
     color: #46C1D5;
     background-color: rgb(7, 57, 90);
 }
@@ -61,12 +67,15 @@ a:hover {
 .site-subtitle{
     font-style: italic;
 }
+.contato,
 .portfolio {
-  background-color: red;
   padding: 2em;
+  min-height: 100vh;
 }
+.contato h2,
 .portfolio h2 {
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 .grid{
   display: grid;
@@ -84,7 +93,29 @@ a:hover {
     justify-content: center;
   }
 }
+/* .img-portfolio figure {
+  text-align: center;
+} */
 .img-portfolio{
     width: 240px;
     height: 180px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 1s;
+  }
+
+.img-portfolio:hover {
+    transform: scale(1.5);
+}
+.contato{
+  height: 100vh;
+}
+.contato a{
+  color: #eee;
+  font-size: 7em;
+  transition: text-shadow 1s, color 1s;
+}
+.contato a:hover{
+  color: #fff;
+  text-shadow: 0px 0px 10px #fff;
 }
