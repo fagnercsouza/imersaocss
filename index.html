@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="https://kit.fontawesome.com/54ca175734.js" crossorigin="anonymous"></script>
   <title>Fagner Souza</title>
 </head>
@@ -14,22 +14,47 @@
   <header>
     <nav class="menu">
       <ul>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="titulo">
+      <p>Aula 5 - 45min</p>
       <h1 class="site-title">Fagner Souza</h1>
       <h2 class="site-subtitle">jr. frontend developer</h2>
     </div>
   </header>
+  <section class="sobre" id="sobre">
+    <h2>Sobre</h2>
+    
+    <div class="contant">
+      <figure class="avatar">
+        <img src="img/sobre.png" alt="">
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illo similique quod enim ea, repudiandae recusandae explicabo sequi eius sapiente dicta libero quas ducimus quaerat animi repellendus exercitationem blanditiis pariatur!
+        Corporis magnam voluptatem iusto earum explicabo? Distinctio laboriosam, nulla quaerat ex id laudantium eos, adipisci corporis aliquid pariatur illo nihil esse velit sapiente aspernatur aut officia deleniti in necessitatibus error.
+      </p>
+      <p>
+        Delectus sapiente natus eligendi nobis aspernatur debitis aliquam. Beatae reiciendis saepe consectetur, laudantium quae impedit, vitae perferendis neque pariatur eaque corrupti asperiores. In dolorum deserunt eos qui maiores consequuntur ipsam.
+      </p>
+      <p>
+        Corporis magnam voluptatem iusto earum explicabo? Distinctio laboriosam, nulla quaerat ex id laudantium eos, adipisci corporis aliquid pariatur illo nihil esse velit sapiente aspernatur aut officia deleniti in necessitatibus error.
+      </p>
+      <p>
+        Este site foi construido durante a <a href="https://www.alura.com.br/imersao-css" target="_blank">Imersão CSS da Alura</a>
+      </p>
+    </div>    
+  </section>
   <section class="portfolio" id="portfolio">
     <h2>Portfólio</h2>
     <div class="grid">
       <figure>
-        <img src="./img/cam.jpg" class="img-portfolio" alt="Câmera antiga" />
-        <figcaption>Camera antiga</figcaption>
+        <a href="https://github.com/fagnercsouza/imersaocss" target="_blank">
+        <img src="./img/imersao.png" class="img-portfolio" alt="Câmera antiga" />
+        <figcaption>Imersão CSS</figcaption>
+        </a>
       </figure>
       <figure>
         <img src="./img/carro.jpg" class="img-portfolio" alt="Primeiros carros" />

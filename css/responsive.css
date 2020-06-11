@@ -1,22 +1,47 @@
+/* se tela tiver ao menos 400px vai carregar estes estilos*/
+/* breackpoint */
 @media (min-width: 400px) {
-    body {
-      font-size: 14px;
-    }
+  body {
+    font-size: 14px;
   }
-  @media (min-width: 600px) {
-    body {
-      font-size: 16px;
-    }
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
   }
+}
 
-  @media (min-width: 560px) {
-    .grid {
-      grid-template-columns: 240px 240px;
-    }
+@media (min-width: 560px) {
+  .grid {
+    grid-template-columns: 240px 240px;
   }
-  @media (min-width: 840px) {
-    .grid {
-      grid-template-columns: repeat(3, 240px);
-      justify-content: center;
-    }
+}
+@media (min-width: 840px) {
+  .grid {
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
   }
+  body{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px){
+  .sobre h2,
+  .contato h2,
+  .portfolio h2 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Faz animação do título */
+/* @keyframes animiTitulo {
+  0% {
+
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+} */

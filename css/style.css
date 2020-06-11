@@ -5,28 +5,15 @@
   box-sizing: border-box;
 }
 body{
-    background-color: #3b9bd6 ;
-    background-image: url('https://marirabello.com.br/wp-content/uploads/2018/09/Simple-Blue-Background.jpg');
-    background-size: auto 100vh;
-    font-family: Arial;
-    font-size: 12px;
+  background: rgb(11,0,204);
+  background: linear-gradient(90deg, rgba(11,0,204,1) 0%, rgba(9,9,121,1) 35%, rgba(12,111,131,1) 100%);
+  /* background-image: url('https://marirabello.com.br/wp-content/uploads/2018/09/Simple-Blue-Background.jpg'); */
+  background-size: auto 100vh;
+  font-family: Arial;
+  font-size: 12px;
 }
-/* se tela tiver ao menos 400px vai carregar estes estilos*/
-/* breackpoint */
-@media (min-width: 400px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media (min-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-}
-@media (min-width: 840px){
-  body{
-    font-size: 20px;
-  }
+a {
+  text-decoration: none;
 }
 header{
     height: 100vh;
@@ -39,6 +26,8 @@ header{
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
+
 }
 .menu ul {
     display: flex;
@@ -48,17 +37,25 @@ header{
 .menu li{
     list-style: none;
 }
-.menu a{
+.menu a {
     display: block;
     padding: 16px;
     color: #fff;
-    text-decoration: none;
     transition: background-color 1s, color 1s;
 }
+.menu a:active,
 .menu a:hover {
     color: #46C1D5;
     background-color: rgb(7, 57, 90);
 }
+/* faz animação do título*/
+/* .titulo{
+  transform: scale(0,5) translateY(50vh);
+  opacity: 0;
+  animation: ease 2s animiTitulo forwards;
+} */
+
+
 .site-subtitle,
 .site-title {
     color: whitesmoke ;
@@ -67,32 +64,50 @@ header{
 .site-subtitle{
     font-style: italic;
 }
-.contato,
-.portfolio {
+.sobre,
+.portfolio,
+.contato {
   padding: 2em;
   min-height: 100vh;
 }
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   margin-bottom: 1.5em;
   margin-top: 1.5em;
+  color: #f0f0f5;
+}
+
+.sobre .avatar img{
+  width: 300px;
+  clip-path: polygon(50% 30%, 100% -25%, 90% 55%, 50% 80%, 10% 55%, 0 -20%);
+}
+.sobre .avatar {
+  float: right;
+  margin-left: 1em;
+}
+.sobre div {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sobre p{
+  color: #fff;
+  text-indent: 1.5em;
+  margin-bottom: 15px;
+  text-align: justify ;
+}
+.sobre a {
+  color: #f0f0f5;
 }
 .grid{
   display: grid;
   gap: 2em;
   grid-template-columns: 240px;
+  text-align: center;
 }
-@media (min-width: 560px) {
-  .grid {
-    grid-template-columns: 240px 240px;
-  }
-}
-@media (min-width: 840px) {
-  .grid {
-    grid-template-columns: repeat(3, 240px);
-    justify-content: center;
-  }
-}
+
+
 /* .img-portfolio figure {
   text-align: center;
 } */
@@ -107,6 +122,7 @@ header{
 .img-portfolio:hover {
     transform: scale(1.5);
 }
+
 .contato{
   height: 100vh;
 }
@@ -115,6 +131,8 @@ header{
   font-size: 7em;
   transition: text-shadow 1s, color 1s;
 }
+.sobre a:hover,
+.contato a:active,
 .contato a:hover{
   color: #fff;
   text-shadow: 0px 0px 10px #fff;
